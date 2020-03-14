@@ -57,6 +57,7 @@ requests==2.21.0
 sampledata==0.3.7
 serpy==0.1.1
 six==1.14.0
+taiga-contrib-slack==3.1
 tinycss==0.4
 unidecode==0.4.20
 urllib3==1.24.3
