@@ -15,7 +15,7 @@ PUBLIC_REGISTER_ENABLED = os.environ.get("PUBLIC_REGISTER_ENABLED", "true").lowe
 DEFAULT_FROM_EMAIL = os.environ.get("FROM_EMAIL")
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
-INSTALLED_APPS += ["taiga_contrib_slack"]
+#INSTALLED_APPS += ["taiga_contrib_slack"]
 
 #CELERY_ENABLED = True
 
