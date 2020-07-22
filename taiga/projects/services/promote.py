@@ -71,7 +71,10 @@ def _import_comments(source_obj, target_obj):
     signals.pre_save.receivers = []
     signals.post_save.receivers = []
 
-    comments = get_history_queryset_by_model_instance(source_obj).exclude(comment__exact='')
+    comments = (
+        get_history_queryset_by_model_instance(source_obj)
+            .exclude(comment__exact='')
+    )
     us_key = make_key_from_model_object(target_obj)
 
     for entry in comments.all():
@@ -85,6 +88,8 @@ def _import_comments(source_obj, target_obj):
             values=entry.values,
             comment=entry.comment,
             comment_html=entry.comment_html,
+            delete_comment_date=entry.delete_comment_date,
+            delete_comment_user=entry.delete_comment_user,
             is_hidden=False,
             is_snapshot=False,
             created_at=entry.created_at
@@ -115,6 +120,7 @@ def _import_attachments(source_obj, target_obj, content_type):
             size=attachment.size,
             created_date=attachment.created_date,
             is_deprecated=attachment.is_deprecated,
+            description=attachment.description,
         )
         attached_file = attachment.attached_file
         att.attached_file.save(attachment.name, ContentFile(attached_file.read()), save=True)

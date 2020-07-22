@@ -259,7 +259,7 @@ TEMPLATES = [
 ]
 
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     "taiga.base.middleware.cors.CorsMiddleware",
     "taiga.events.middleware.SessionIDMiddleware",
 
@@ -475,6 +475,8 @@ DEFAULT_PROJECT_SLUG_PREFIX = True
 PUBLIC_REGISTER_ENABLED = False
 # None or [] values in USER_EMAIL_ALLOWED_DOMAINS means allow any domain
 USER_EMAIL_ALLOWED_DOMAINS = None
+
+PRIVATE_USER_PROFILES = False
 
 SEARCHES_MAX_RESULTS = 150
 

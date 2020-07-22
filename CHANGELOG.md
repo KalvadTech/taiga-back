@@ -2,6 +2,56 @@
 
 ## Unreleased
 
+- Upgrade Django version to 2.2. This is a BREAKING CHANGE. Contributed modules
+  should be upgraded.
+
+### Misc
+
+- Several minor bugfixes.
+
+## 5.0.14 (2020-06-16)
+
+### Misc
+
+- Fixed several minor bugs.
+
+## 5.0.13 (2020-06-08)
+
+### Features
+
+- Resolved Django deprecation warnings to prepare for an upgrade.
+
+- Added option to disallow anonymous access to user profiles. 
+
+### Misc
+
+- Updated requirements.
+
+- Use pip-tools to manage dependencies.
+
+### i18n
+
+- Updated translations (lv).
+
+## 5.0.12 (2020-05-12)
+
+### Security
+
+- Avoid change in membership attribute. We encourage all users of Taiga
+  to upgrade as soon as possible.
+
+## 5.0.11 (2020-05-04)
+
+### Misc
+
+- Fixed several minor bugs.
+
+- Updated requirements.
+
+### i18n
+
+- Updated translations (es, lv, ru, tr, uk).
+
 ## 5.0.9 (2020-03-11)
 
 ### Feature
