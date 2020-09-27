@@ -2,12 +2,68 @@
 
 ## Unreleased
 
-- Upgrade Django version to 2.2. This is a BREAKING CHANGE. Contributed modules
-  should be upgraded.
+## 5.5.5 (2020-09-16)
 
 ### Misc
 
+- Improve verify email feature for invited users.
+
+### i18n
+
+- Update catalog.
+
+- Update fa.
+
+## 5.5.4 (2020-09-08)
+
+### Misc
+
+- Upgrade requirements.
+
+### i18n
+
+- Update French translation.
+
+## 5.5.3 (2020-09-02)
+
+### Misc
+
+- Parametrize mdrender cache options.
+
+- Minor bug fix.
+
+## 5.5.2 (2020-08-26)
+
+### Misc
+
+- Tweaks mdrender cache.
+
+## 5.5.1 (2020-08-23)
+
+### Features
+
+- Prevent member creation to users with unverified email address.
+
+## 5.5.0 (2020-08-19)
+
+### Features
+
+- Verify user email.
+
+- Task promotion creates user story and deletes original task.
+
+### Misc
+
+- Upgraded Django version to 2.2. This is a BREAKING CHANGE. Contributed
+  modules should be upgraded.
+
 - Several minor bugfixes.
+
+## 5.0.15 (2020-06-17)
+
+### Misc
+
+- Fixed bug old dump format project import.
 
 ## 5.0.14 (2020-06-16)
 
@@ -21,7 +77,7 @@
 
 - Resolved Django deprecation warnings to prepare for an upgrade.
 
-- Added option to disallow anonymous access to user profiles. 
+- Added option to disallow anonymous access to user profiles.
 
 ### Misc
 
@@ -270,12 +326,12 @@
 
 - Minor icon changes
 - Lots of small bugfixes
- 
+
 ## 3.4.5 (2018-10-15)
 
 ### Features
 
-- Prevent local Webhooks 
+- Prevent local Webhooks
 
 ## 3.4.4 (2018-09-19)
 
